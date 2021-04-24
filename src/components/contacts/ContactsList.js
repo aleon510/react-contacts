@@ -1,8 +1,14 @@
 import ContactCard from "./ContactCard"
+import styled from 'styled-components';
+
+const ContactListWrapper = styled.div`
+    padding: 100px 0;
+    background-color: #e4e4e4;
+`;
 
 const ContactList = ({ contacts=[] }) => {
     return (
-        <div>
+        <ContactListWrapper>
             {contacts.map((contact) => 
                 <ContactCard 
                     key={contact.id}
@@ -12,7 +18,7 @@ const ContactList = ({ contacts=[] }) => {
                     profilePic={contact.profilePic}
                 />
             )}
-        </div>
+        </ContactListWrapper>
     )
 }
 
