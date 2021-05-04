@@ -1,7 +1,3 @@
-import ContactsList from './ContactsList';
-
-const ContactsPage = ({ contacts = [] }) => {
-  return <ContactsList contacts={contacts} />;
-};
+import ContactsPage from './ContactsPage';
 
 export default ContactsPage;
